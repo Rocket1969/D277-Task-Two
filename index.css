@@ -6,7 +6,8 @@
   font-family: sans-serif;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
@@ -31,14 +32,16 @@ header {
   background: #81a8b7;
   color: white;
   padding: 2rem 0;
-  position: relative; /* key: needed so h1 absolute positioning is relative to header */
+  position: relative;
+  /* key: needed so h1 absolute positioning is relative to header */
 }
 
 header h1 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* perfectly centers it */
+  transform: translate(-50%, -50%);
+  /* perfectly centers it */
   margin: 0;
 }
 
@@ -79,10 +82,8 @@ nav a.active {
   padding: 1rem;
   width: 100%;
   flex: 1;
-  /* let container grow and fill available space */
   align-items: stretch;
 }
-
 
 
 main {
@@ -130,6 +131,58 @@ aside {
 .table-container th {
   background: #81a8b7;
   color: white;
+}
+
+#contact-title {
+  float: left;
+  width: 40%;
+  padding: 2rem;
+  background: #ffffff;
+  text-align: center;
+}
+
+.contact-form {
+  float: right;
+  width: 55%;
+  padding: 2rem;
+  background: #f2f2f2;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #81a8b7;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #5d7f8a;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 footer {
