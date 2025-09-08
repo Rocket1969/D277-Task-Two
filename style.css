@@ -88,15 +88,22 @@ nav a.active {
 
 main {
   display: flex;
+  flex: 1;
+  flex-wrap: wrap;
   flex-direction: column;
-  /* stack text and image */
   background: #fafafa;
   padding: 1rem;
 }
 
+main.clearfix {
+  flex: 1;   
+  display: block; 
+}
+
+
+
 .img-container {
   margin-top: 1rem;
-  /* space between text and image */
 }
 
 .img-container img {
@@ -137,7 +144,6 @@ aside {
   float: left;
   width: 40%;
   padding: 2rem;
-  background: #ffffff;
   text-align: center;
 }
 
